@@ -17,6 +17,6 @@ class TimeCard:
         hours = self.__end_time - self.__start_time
 
         if hours <= 8:
-            daily_pay = hours * rate
+            return hours * rate
         if hours > 8:
-            daily_pay = (rate * 8) + (1.5*rate * (hours - 8))
+            return (rate * 8) + (1.5*rate * (hours - 8))
